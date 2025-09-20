@@ -1,0 +1,65 @@
+{
+  "user_id": "uuid-or-generated-id",
+
+  "explicit": {
+    "age": 25,
+    "city": "Buffalo, NY",
+    "radius_km": 30,
+    "intent": "serious",               // casual | serious | marriage | friendship
+    "kids": "maybe",                   // want | dont | maybe
+    "smoking": "no",                   // yes | no | social
+    "drinking": "social",              // never | rarely | social | regularly
+    "hobbies": ["cooking","travel","movies"],
+    "religion": null,
+    "politics": null
+  },
+
+  "free_text": {
+    "corpus": "Q: Describe your perfect weekend.\nA: Hiking and cooking with friends.\n\n---\nQ: What kind of humor cracks you up?\nA: Playful sarcasm.\n\n---\nQ: What do you value most in a partner?\nA: Honesty and family.",
+    "lang": "en",
+    "source_map": [
+      {"q": "Describe your perfect weekend.", "start": 3, "end": 45},
+      {"q": "What kind of humor cracks you up?", "start": 52, "end": 70},
+      {"q": "What do you value most in a partner?", "start": 78, "end": 95}
+    ],
+    "last_updated": "2025-09-14T20:15:00Z",
+    "hash": "sha256:abc123..."   // optional: helps cache embeddings
+  },
+
+  "quiz": {
+    "plan_week": 5,     // Likert 1–5 (if used)
+    "conflict_space": 2 // optional
+  },
+
+  "traits_inferred": {
+    "big_five": {"O":0.72,"C":0.58,"E":0.34,"A":0.82,"N":0.40},
+    "attachment": {"secure":0.61,"anxious":0.22,"avoidant":0.17},
+    "humor_style": "playful",
+    "love_languages": {"quality_time":0.44,"acts":0.31,"words":0.15,"touch":0.08,"gifts":0.02},
+    "values": ["family","honesty","outdoors"],
+    "dealbreakers": ["smoking"],
+    "confidence": 0.74,
+    "evidence_ids": ["big5-extraversion#signals","attachment#overview"]
+  },
+
+  "traits_current": {
+    "big_five": {"O":0.72,"C":0.58,"E":0.34,"A":0.82,"N":0.40},
+    "attachment": {"secure":0.61,"anxious":0.22,"avoidant":0.17},
+    "humor_style": "playful",
+    "love_languages": {"quality_time":0.44,"acts":0.31,"words":0.15,"touch":0.08,"gifts":0.02},
+    "values": ["family","honesty","outdoors"],
+    "dealbreakers": ["smoking"],
+    "last_confirmed_at": "2025-09-14T20:20:00Z"
+  },
+
+  "consents": {
+    "trait_inference": true,
+    "behavior_signals": false,
+    "explanations_rag": true
+  },
+
+  "timestamps": {
+    "created_at": "2025-09-14T20:00:00Z",
+    "updated_at": "2025-09-14T20:20:00Z"
+  }
+}

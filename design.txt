@@ -1,0 +1,85 @@
+Compatibility Score:
+- Explicit vector(Similarity Matrix) and Implicit vector(Latent Embedding) [Big 5, attachment style, humour]
+- Compatibility is not “just similarity” — some dimensions want similarity, others want complementarity.
+- Show user why compatibility score is what it is.
+
+Personal Traits:
+
+-Explicit Traits
+	Demographic & lifestyle basics
+	Age
+	Gender identity & sexual orientation
+	Location (city / distance preference)
+	Relationship intent (casual, serious, marriage, friendship)
+	Education / career
+	Religion / spirituality (if relevant)
+	Lifestyle factors: smoking, drinking, exercise, diet
+	Interests & hobbies
+	Hobbies (sports, music, travel, gaming, cooking, etc.)
+	Favorite activities (going out, outdoors, reading, movies, etc.)
+	Cultural interests (art, literature, films, etc.)
+	Values & deal-breakers
+	Political orientation / worldview (sometimes explicit, sometimes inferred)
+	Family goals (wants kids / doesn’t)
+	Time preferences (night owl vs morning person, travel vs homebody)
+
+-Implicit Traits
+Personality (Big Five)
+	Openness
+	Conscientiousness
+	Extraversion
+	Agreeableness
+	Neuroticism
+
+Attachment style
+	Secure
+	Anxious
+	Avoidant
+
+Communication style
+	Direct vs indirect
+	Humor style (sarcastic, playful, dry, etc.)
+	Emotional expressiveness
+
+Love language preference
+	Words of affirmation
+	Acts of service
+	Receiving gifts
+	Quality time
+	Physical touch
+
+Interpersonal / emotional traits
+	Optimism vs pessimism
+	Empathy / compassion
+	Conflict style (avoidant, confrontational, problem-solving)
+	Risk tolerance (adventurous vs stability-seeking)
+	Independence vs interdependence
+	Social orientation (party-loving vs intimate settings)
+
+-Trait Extraction
+	
+Explicit: 
+	Straight Forward
+	
+Implicit: 
+	1.From Profile Prompts
+	2.Psychometrics Questionnaire
+	3.From Interaction Behavior on the App
+	3.Micro-Surveys or Gamified Quizzes
+	Issue: Consumes user time.
+
+MVP GOAL:
+	-RAG is able to extract implicit traits and score them using(JSON traits)
+	-Compute a compatibility score based on rule-based weighted similarity (later we can change to a learning ranked model)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question:
+How do we address the ratio problem and the user involvement problem, we have to extract implicit user traits without it being tedious
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+make website
+deal breakers
+weight systems
+
+
